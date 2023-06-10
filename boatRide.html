@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Ride</title>
+    <link rel="stylesheet" href="./boatRide.css">
+    
+</head>
+<body>
+    <form action="" onsubmit="calculate()">
+        <h3>Boat Ride Bill Automation</h3>
+        <table>
+            <tr>
+                <td>customerName</td>
+                <td><input type="text" id="name" placeholder="enter your name" ></td>
+            </tr>
+            <tr>
+                <td>email id</td>
+                <td><input type="email" placeholder="enter your email" id="mailid"> </td>
+            </tr>
+            <tr>
+                <td>
+                    phone number
+                </td>
+                <td>
+                    <input type="tel" id="phonenum" placeholder="enter your phone number">
+                </td>
+            </tr>
+            <tr><td>number of persons</td><td><input type="number" id="numberofpersons"> </td></tr>
+            <tr><td>boat type</td><td>
+                <select name="boatType" id="boatType" >
+                    <option value="2">2 seater boat</option>
+                    <option value="4">4 seater boat</option>
+                    <option value="8">8 seater boar</option>
+                    <option value="15">15 seater boat</option>
+                 </select></td></tr>
+            <tr><td>travel duration in hours</td><td><input type="number" id="duration"> </td></tr>
+        </table>
+        <button type="submit">Book Ride</button>
+        <p id="result"></p>
+    </form>
+    <script rel="script" src="./boatRide.js"></script>
+</body>
+</html>
